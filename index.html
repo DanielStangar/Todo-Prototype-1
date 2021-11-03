@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner IV</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>Planner for Forgetful Managers</h1>
+<div id='topButtons'>
+    <button id="reload2">Reload</button>
+    <button id='hintModeBtn'>Hint Mode</button>
+   
+    <button id='hintBtn'>Next Hint</button>
+    <button id='showInstructionBtn'>Instruction</button>
+    </div>
+
+    <hr>
+    
+
+    <div id='primary-module' class='primary-module'>
+      
+       
+      <p id='first-instruction' class='instruction'>
+           Use the input field below to type the tomorrow's tasks 
+           that you now remember. By 
+        pressing ENTER or "ADD" button you will be creating
+         a list with numbered items.
+        When you run out of answers, press HINT MODE button above
+         for the next instruction. Or use the hint mode straight away if you wish.
+         <br><button id='open-closeBtn'>Close</button></p>
+       
+
+    
+           
+        <p id='hintText' class='hintText instruction'></p>
+            <button id='hintBtn'>Next Hint</button>
+        
+
+       
+    </div><!-- /primary-module -->
+
+    <hr>
+
+
+
+    <div id='reloadOffer' class='instruction'>
+        <h4>Your plan is now saved. If you want to review it
+         or compile another plan, use the reload button.</h4>
+         <button id='reload'>Reload</button>
+    </div>
+
+    <h3 id='tomorrowTitle' class='list-module'>Your Plan for Tomorrow</h3>
+
+<div class=displayModule>
+    <div id='list-module' class='list-module' >
+
+        <div id='input-module' class='input-module'>
+            
+        
+            <input id='user-input' type='text' placeholder='Type here...'>
+            <span id='saveTaskBtn'><button id='addBtn'>Add</button></span>
+            
+        </div>
+
+     
+        
+     
+        
+        <ol class='list-module' id='tasksOutput'>
+
+
+            
+        </ol>
+      
+        <input id='fileName' type='text' />
+        <button id='saveListBtn' class='list-module'>Save List</button>
+        <button id='saveAsBtn'>Save As</button>
+    
+    </div><!-- /list-module -->
+
+
+
+
+       
+        <!--input-module-->
+<hr>
+
+    <div id='closed-list-module' class='closed-list'>
+    
+        <h3 id='weekday-heading'>Saved Plans</h3>
+    
+    </div>
+
+   
+
+    <div id='reopened-plan-module' class='prev-day-plan'>
+        <!--<p>Reopened Plan</p>-->
+        <ol class='list-module' id='reopenedPlan'>
+    
+        </ol>
+        
+
+    </div>
+    <button id='openPlanListBtn'>Close</button>
+
+</div>
+<!--displayModule-->
+<hr>
+
+
+
+<script src='script.js'></script>
+<script src='hints-script.js'></script>
+<!--<script src='archive.js'></script>-->
+</body>
+</html>

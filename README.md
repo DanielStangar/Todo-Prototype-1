@@ -1,2 +1,2 @@
 # Todo-Prototype-1
-Planner for forgetful Managers
+Planner for Forgetful Managers
